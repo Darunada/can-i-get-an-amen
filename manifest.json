@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Can I get an Amen?",
+    "description": "Changes Approve to Amen on the Bitbucket PR review page.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://bitbucket.org/*/pull-requests/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
